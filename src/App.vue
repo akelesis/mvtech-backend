@@ -4,8 +4,21 @@
       <img :src="companyLogo" alt="Logo da empresa" id="mvtech-logo" />
     </Section>
     <Menu />
-    <Section></Section>
-    <Section></Section>
+    <Section id="about">
+      <h2>Quem Somos</h2>
+    </Section>
+    <Section id="services" :color="'#344A5F'">
+      <h2>Serviços</h2>
+    </Section>
+    <Section id="tecnologies" :color="'#79ACDC'">
+      <h2>Tecnologias</h2>
+    </Section>
+    <Section id="portfolio" :color="'#62788C'">
+      <h2>Portfólio</h2>
+    </Section>
+    <Section id="budget">
+      <h2>Solicite Orçamento</h2>
+    </Section>
   </div>
 </template>
 
@@ -34,6 +47,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 #app {

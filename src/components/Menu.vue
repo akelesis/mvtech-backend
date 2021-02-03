@@ -1,11 +1,11 @@
 <template>
   <nav :class="isFixed ? 'fixed' : ''">
     <div id="nav-arrow" v-scroll="handleScroll"></div>
-    <a href="#">Quem Somos</a>
-    <a href="#">Serviços</a>
-    <a href="#">Tecnologias</a>
-    <a href="#">Portfólio</a>
-    <a href="#">Solicite Orçamento</a>
+    <a href="#about">Quem Somos</a>
+    <a href="#services">Serviços</a>
+    <a href="#tecnologies">Tecnologias</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#budget">Solicite Orçamento</a>
   </nav>
 </template>
 
