@@ -19,12 +19,14 @@
     <Section id="budget">
       <h2>Solicite Orçamento</h2>
     </Section>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Menu from "./components/Menu.vue";
 import Section from "./components/Section.vue";
+import Footer from "./template/Footer.vue";
 import companyLogo from "./assets/images/mvtech.png";
 
 export default {
@@ -37,6 +39,7 @@ export default {
   components: {
     Menu,
     Section,
+    Footer,
   },
 };
 </script>
