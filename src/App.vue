@@ -11,7 +11,38 @@
       <h2>Serviços</h2>
     </Section>
     <Section id="tecnologies" :color="'#79ACDC'">
-      <h2>Tecnologias</h2>
+      <h2>Tecnologias que utilizamos</h2>
+      <div class="tecnologies-icons">
+        <div>
+          <img src="./assets/icons/html.svg" alt="html_icon">
+          <h2>HTML</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/css.svg" alt="css_icon">
+          <h2>CSS</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/javascript.svg" alt="javascript_icon">
+          <h2>JAVASCRIPT</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/react.svg" alt="react_icon">
+          <h2>REACT</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/vue.svg" alt="vue_icon">
+          <h2>VUE</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/node.svg" alt="node_icon">
+          <h2>NODE</h2>
+        </div>
+        <div>
+          <img src="./assets/icons/figma.svg" alt="figma_icon">
+          <h2>FIGMA</h2>
+        </div>
+      </div>
+      <h2>E muitas outras...</h2>
     </Section>
     <Section id="portfolio" :color="'#62788C'">
       <h2>Portfólio</h2>
@@ -64,4 +95,36 @@ body {
 #mvtech-logo {
   width: 60vw;
 }
+
+#tecnologies{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tecnologies h2 {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+
+.tecnologies-icons {
+  width: 80vw;
+  height: 170px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.tecnologies-icons div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tecnologies-icons div img{
+  height: 120px;
+}
+
 </style>
