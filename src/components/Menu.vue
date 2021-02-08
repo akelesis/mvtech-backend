@@ -76,6 +76,7 @@ export default {
 
 .fixed {
   position: fixed;
+  max-width: 100vw;
   top: 0;
 }
 
