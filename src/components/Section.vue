@@ -119,18 +119,28 @@
           DoN
         </button>
       </div>
-      <div class="portfolio-content">
+      <div v-if="selectedPortfolio === 1" class="portfolio-content">
+        <h3>CONSULBA</h3>
+        <p>
+          O projeto visa facilitar a relação consulba consulba consulba consulba
+          consulba consulba consulba consulba consulba consulba consulba consulba
+          consulba consulba consulba consulba consulba consulba consulba consulba.
+        </p>
+      </div>
+      <div v-if="selectedPortfolio === 2" class="portfolio-content">
         <h3>CONEXTUDE</h3>
         <p>
-          O projeto visa facilitar a relação Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Mauris eget felis eget lacus volutpat
-          malesuada eget nec dolor. Fusce condimentum libero a dui commodo
-          pellentesque. Aliquam tempor tortor nibh, nec finibus erat faucibus
-          nec. Nullam congue non nulla rhoncus feugiat. Ut sed lectus felis.
-          Morbi luctus sapien risus, sed rhoncus purus imperdiet non. Nunc
-          accumsan, nulla ac blandit dignissim, erat nisl rutrum metus, at
-          cursus libero justo dictum dui. Ut facilisis sed velit sit amet
-          tempus.
+          O projeto visa facilitar a relação conextude conextude conextude conextude
+          conextude conextude conextude conextude conextude conextude conextude conextude
+          conextude conextude conextude conextude conextude conextude conextude.
+        </p>
+      </div>
+      <div v-if="selectedPortfolio === 3" class="portfolio-content">
+        <h3>DoN</h3>
+        <p>
+          O projeto visa facilitar a relação Don Don Don Don Don Don Don Don Don Don Don Don
+          Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don
+          Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don.
         </p>
       </div>
     </div>
@@ -313,6 +323,7 @@ section {
 
 .portfolio-container {
   width: 100%;
+  min-height: 35vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -335,6 +346,7 @@ section {
   margin: 0 5px 0 5px;
   padding: 30px;
   border: 4px solid #62788c;
+  outline: none;
 
   transition: opacity 0.2s;
 }
@@ -415,6 +427,8 @@ section {
   height: 35px;
   font-size: 18px;
   margin-bottom: 18px;
+  outline: none;
+  padding: 7px;
 }
 
 .budget-container form textarea {
@@ -423,6 +437,8 @@ section {
   resize: none;
   border: 0;
   font-size: 18px;
+  outline: none;
+  padding: 7px;
 }
 
 .budget-container form button {
@@ -432,12 +448,17 @@ section {
   border: 0;
   margin-top: 20px;
   cursor: pointer;
+  outline: none;
 
   transition: opacity 0.2s;
 }
 
 .budget-container form button:hover {
   opacity: 0.8;
+}
+
+.budget-container form button:active {
+  opacity: 1;
 }
 
 @media (min-width: 1110px) {

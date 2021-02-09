@@ -76,6 +76,10 @@ body {
   font-size: 35px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
   font-weight: lighter;
   font-size: 45px;

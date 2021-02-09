@@ -8,7 +8,7 @@
     <a href="#budget" class="desktop-link">Solicite Orçamento</a>
     <nav
       class="mobile-navigator"
-      v-bind:style="isMobileNavActivated ? 'left: 0;' : 'left: -80vw;'"
+      :style="isMobileNavActivated ? 'left: 0;' : 'left: -80vw;'"
     >
       <a href="#about" class="mobile-link" @click="handleMobileNav()"
         >Quem Somos</a
