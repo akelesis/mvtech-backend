@@ -241,13 +241,13 @@
             necessidade!</span
           >
           <label for="name">Nome Completo</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" v-model="formData.name" />
           <label for="email">E-Mail</label>
-          <input type="text" name="email" />
+          <input type="text" name="email" v-model="formData.email" />
           <label for="phone">Telefone (Whatsapp)</label>
-          <input type="text" name="phone" />
+          <input type="text" name="phone" v-model="formData.phone" />
           <label for="message">Deixe sua mensagem</label>
-          <textarea name="message"></textarea>
+          <textarea name="message" v-model="formData.message"></textarea>
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -257,6 +257,7 @@
 
 <script>
 import Section from "../components/Section";
+import { emailUrl } from "../config";
 
 export default {
   name: "Content",
@@ -264,6 +265,12 @@ export default {
     return {
       selectedService: 3,
       selectedPortfolio: 1,
+      formData: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
     };
   },
   components: {
@@ -284,7 +291,21 @@ export default {
       this.selectedService = value;
     },
     handleFormSubmit() {
-      console.log("Sent!");
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(this.formData),
+      };
+
+      fetch(emailUrl, requestOptions)
+        .then(() => {
+          alert("Obrigado, entraremos em contato em breve :)");
+        })
+        .catch(() => {
+          alert(
+            "Não foi possível realizar a solicitação no momento, tente mais tarde."
+          );
+        });
     },
   },
 };

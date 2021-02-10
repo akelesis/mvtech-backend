@@ -8,24 +8,13 @@
 export default {
   name: "Section",
   data() {
-    return {
-      selectedService: 3,
-      selectedPortfolio: 1,
-    };
+    return {};
   },
   props: {
     color: {
       type: String,
       required: false,
       default: "#3E6A94",
-    },
-  },
-  methods: {
-    handlePortfolio(value) {
-      this.selectedPortfolio = value;
-    },
-    handleFormSubmit() {
-      console.log("Sent!");
     },
   },
 };
@@ -257,6 +246,7 @@ section {
 .budget-container img {
   max-width: 500px;
   width: 100%;
+  height: min-content;
 }
 
 .budget-container form {
