@@ -1,175 +1,6 @@
 <template>
   <section :style="{ 'background-color': color }">
-    <!-- Section for custom content, like the website header -->
-
-    <slot v-if="type === 'custom'" />
-
-    <!-- Content for the about section -->
-
-    <div class="about-container" v-if="type === 'about'">
-      <div class="about-icon">
-        <div class="about-icon-container">
-          <img src="../assets/icons/computer.png" alt="Computer Icon" />
-        </div>
-      </div>
-      <div class="about-content">
-        <h2>Quem Somos</h2>
-        <p>
-          A MVTech surgiu da paixão de amigos por desenvolver soluções
-          computacionais para os mais diversos problemas do mundo moderno. E é
-          através desta paixão que conseguimos a dedicação e o cuidado
-          necessários para atingirmos a qualidade visada pelos nossos clientes.
-        </p>
-        <p>
-          Buscamos sempre trabalhar com as melhores tecnologias do mercado de
-          forma a gerar valor para tudo aquilo que produzimos. É de extrema
-          importância para a equipe da MVTech a busca pela evolução e superação
-          a cada novo produto idealizado, projetado e executado.
-        </p>
-        <p>
-          Entendemos que o nosso cliente é quem nos inspira a cada dia com novos
-          desafios e prezamos pela excelencia na execução dos projetos.
-        </p>
-      </div>
-    </div>
-
-    <!-- Content for the services section -->
-
-    <h2 v-if="type === 'services'">Serviços</h2>
-    <div class="services-container" v-if="type === 'services'">
-      <div class="services-content">
-        <h3>PWA</h3>
-        <p>
-          PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Mauris eget felis eget lacus volutpat malesuada eget
-          nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-          Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-          congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-          sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla ac
-          blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-          dictum dui. Ut facilisis sed velit sit amet tempus.
-        </p>
-      </div>
-      <div class="services-grid">
-        <img src="../assets/icons/world.svg" alt="Globe Icon" />
-        <img src="../assets/icons/laptop.svg" alt="Laptop Icon" />
-        <img src="../assets/icons/tablet.svg" alt="Tablet Icon" />
-        <img src="../assets/icons/storage.svg" alt="Storage Icon" />
-        <img src="../assets/icons/cogs.svg" alt="Gears Icon" />
-        <img src="../assets/icons/paint.svg" alt="Paint Icon" />
-      </div>
-    </div>
-
-    <!-- Content for the tecnologies section -->
-
-    <h2 v-if="type === 'tecnologies'">Tecnologias que utilizamos</h2>
-    <div class="tecnologies-icons" v-if="type === 'tecnologies'">
-      <div>
-        <img src="../assets/icons/html.svg" alt="html_icon" />
-        <h2>HTML</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/css.svg" alt="css_icon" />
-        <h2>CSS</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/javascript.svg" alt="javascript_icon" />
-        <h2>JAVASCRIPT</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/react.svg" alt="react_icon" />
-        <h2>REACT</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/vue.svg" alt="vue_icon" />
-        <h2>VUE</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/node.svg" alt="node_icon" />
-        <h2>NODE</h2>
-      </div>
-      <div>
-        <img src="../assets/icons/figma.svg" alt="figma_icon" />
-        <h2>FIGMA</h2>
-      </div>
-    </div>
-    <h2 v-if="type === 'tecnologies'">E muitas outras...</h2>
-
-    <!-- Content for the portfolio section -->
-
-    <h2 v-if="type === 'portfolio'">Portfólio</h2>
-    <div class="portfolio-container" v-if="type === 'portfolio'">
-      <div class="portfolio-options">
-        <button
-          @click="handlePortfolio(1)"
-          :class="selectedPortfolio === 1 ? 'selected-button' : ''"
-        >
-          CONSULBA
-        </button>
-        <button
-          @click="handlePortfolio(2)"
-          :class="selectedPortfolio === 2 ? 'selected-button' : ''"
-        >
-          CONEXUTDE
-        </button>
-        <button
-          @click="handlePortfolio(3)"
-          :class="selectedPortfolio === 3 ? 'selected-button' : ''"
-        >
-          DoN
-        </button>
-      </div>
-      <div v-if="selectedPortfolio === 1" class="portfolio-content">
-        <h3>CONSULBA</h3>
-        <p>
-          O projeto visa facilitar a relação consulba consulba consulba consulba
-          consulba consulba consulba consulba consulba consulba consulba consulba
-          consulba consulba consulba consulba consulba consulba consulba consulba.
-        </p>
-      </div>
-      <div v-if="selectedPortfolio === 2" class="portfolio-content">
-        <h3>CONEXTUDE</h3>
-        <p>
-          O projeto visa facilitar a relação conextude conextude conextude conextude
-          conextude conextude conextude conextude conextude conextude conextude conextude
-          conextude conextude conextude conextude conextude conextude conextude.
-        </p>
-      </div>
-      <div v-if="selectedPortfolio === 3" class="portfolio-content">
-        <h3>DoN</h3>
-        <p>
-          O projeto visa facilitar a relação Don Don Don Don Don Don Don Don Don Don Don Don
-          Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don
-          Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don.
-        </p>
-      </div>
-    </div>
-
-    <!-- Content for the budget section -->
-
-    <h2 v-if="type === 'budget'">Solicite um orçamento</h2>
-    <div class="budget-container" v-if="type === 'budget'">
-      <img
-        src="../assets/images/budget.gif"
-        alt="Two people playing with a giant coin"
-      />
-      <form @submit.prevent="handleFormSubmit()">
-        <span
-          >Deixe aqui o seu contato e algumas informações básicas sobre a ideia
-          do seu projeto que entraremos em contato o mais rápido possível para
-          pensar um orçamento compatível com a sua necessidade!</span
-        >
-        <label for="name">Nome Completo</label>
-        <input type="text" name="name" />
-        <label for="email">E-Mail</label>
-        <input type="text" name="email" />
-        <label for="phone">Telefone (Whatsapp)</label>
-        <input type="text" name="phone" />
-        <label for="message">Deixe sua mensagem</label>
-        <textarea name="message"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <slot />
   </section>
 </template>
 
@@ -179,7 +10,7 @@ export default {
   data() {
     return {
       selectedService: 3,
-      selectedPortfolio: 2,
+      selectedPortfolio: 1,
     };
   },
   props: {
@@ -187,11 +18,6 @@ export default {
       type: String,
       required: false,
       default: "#3E6A94",
-    },
-    type: {
-      type: String,
-      required: false,
-      default: "custom",
     },
   },
   methods: {
@@ -319,6 +145,19 @@ section {
   height: 150px;
   width: 150px;
   background: #273242;
+  cursor: pointer;
+  padding: 10px;
+
+  transition: opacity 0.2s;
+}
+
+.services-grid img:hover {
+  opacity: 0.8;
+}
+
+.services-grid img.selected {
+  filter: brightness(0) invert(1);
+  background: rgba(0, 0, 0, 0);
 }
 
 .portfolio-container {
@@ -377,14 +216,34 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  animation-name: portfolio;
+  animation-duration: 0.5s;
+}
+
+.portfolio-content::before {
+  animation-name: portfolio;
+  animation-duration: 0.5s;
+}
+
+@keyframes portfolio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .portfolio-content h3 {
   margin-bottom: 70px;
+  animation-name: portfolio;
+  animation-duration: 0.5s;
 }
 
 .portfolio-content p {
   text-align: justify;
+  animation-name: portfolio;
+  animation-duration: 0.5s;
 }
 
 .budget-container {

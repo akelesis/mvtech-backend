@@ -4,19 +4,16 @@
       <img :src="companyLogo" alt="Logo da empresa" id="mvtech-logo" />
     </Section>
     <Menu />
-    <Section id="about" :type="'about'" />
-    <Section id="services" :type="'services'" :color="'#344A5F'" />
-    <Section id="tecnologies" :type="'tecnologies'" :color="'#79ACDC'" />
-    <Section id="portfolio" :type="'portfolio'" :color="'#62788C'" />
-    <Section id="budget" :type="'budget'" />
+    <Content />
     <Footer />
   </div>
 </template>
 
 <script>
 import Menu from "./components/Menu.vue";
-import Section from "./components/Section.vue";
+import Section from "./components/Section";
 import Footer from "./template/Footer.vue";
+import Content from "./template/Content.vue";
 import companyLogo from "./assets/images/mvtech.png";
 
 export default {
@@ -28,8 +25,9 @@ export default {
   },
   components: {
     Menu,
-    Section,
+    Content,
     Footer,
+    Section,
   },
 };
 </script>
