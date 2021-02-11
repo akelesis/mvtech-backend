@@ -78,6 +78,8 @@ export default {
   position: fixed;
   max-width: 100vw;
   top: 0;
+
+  z-index: 5;
 }
 
 #bars-icon {
@@ -137,7 +139,7 @@ nav {
 
 nav a {
   width: 100%;
-  font-family: "Open Sans", Ubuntu;
+  font-family: "Open Sans Condensed", "Open Sans", Ubuntu;
   font-size: 14pt;
   color: #fff;
   padding: 20px 5px 20px 5px;
