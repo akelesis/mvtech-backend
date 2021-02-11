@@ -3,10 +3,19 @@
     <div class="contato">
       <p>Nossas redes sociais:</p>
       <div class="contato-icons">
-        <img src="../assets/icons/instagram.svg" alt="insta_icon" />
-        <img src="../assets/icons/whatsapp.svg" alt="whats_icon" />
-        <img src="../assets/icons/facebook.svg" alt="face_icon" />
+        <button @click="handleRedirect(1)" class="contato-button">
+          <img id="insta-icon" src="../assets/icons/instagram.svg" alt="insta_icon" />
+        </button>
+        <button @click="show = !show" class="contato-button">
+          <img id="whats-icon" src="../assets/icons/whatsapp.svg" alt="whats_icon" />
+        </button>
+        <button @click="handleRedirect(2)" class="contato-button">
+          <img id="face-icon" src="../assets/icons/facebook.svg" alt="face_icon" />
+        </button>
       </div>
+      <transition name="fade">
+        <span v-if="show">Contato: (XX) XXXXX-XXXX</span>
+      </transition>
     </div>
     <div class="copyright">
       <span>Todos os direitos reservados © 2021</span>
@@ -18,6 +27,30 @@
     </div>
   </div>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      show: false
+    }
+  },
+  methods: {
+    handleRedirect(option) {
+      switch(option){
+        case 1:
+          window.open("https://www.instagram.com/mvtechsolutions/");
+          return;
+        
+        case 2:
+          window.open("https://www.facebook.com/mvtechsolutions");
+          return;
+      }
+    }
+  }
+}
+</script>
 
 <style>
 .footer {
@@ -54,7 +87,6 @@
 }
 
 .copyright {
-  /* width: ; */
   height: 100%;
 
   display: flex;
@@ -65,6 +97,38 @@
 .copyright span {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 20px;
+}
+
+.contato-icons button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+
+  border: 0px;
+  border-radius: 5px;
+
+  background: #101838;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-icons button:hover {
+  background: white;
+}
+
+.contato-icons button:hover img {
+  filter: invert(1);
+  background: black;
+
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 850px) {
