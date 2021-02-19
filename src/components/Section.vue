@@ -32,7 +32,7 @@ section {
 }
 
 .tecnologies-icons {
-  width: 80vw;
+  width: 85vw;
   height: 170px;
 
   display: flex;
@@ -54,7 +54,7 @@ section {
 }
 
 .about-icon {
-  max-width: 580px;
+  max-width: 400px; /* 580px */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around; /* space-evenly */
   align-items: stretch;
 }
 
@@ -320,11 +320,11 @@ section {
 
 @media (min-width: 1110px) {
   .about-icon-container {
-    max-width: 550px;
+    max-width: 300px; /**/
   }
 
   .about-content {
-    max-width: 500px;
+    max-width: 800px; /**/
   }
 
   .services-content {
@@ -374,6 +374,8 @@ section {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 15px;
   }
 
   .portfolio-container {
