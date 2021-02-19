@@ -218,10 +218,8 @@
         <div v-if="selectedPortfolio === 3" class="portfolio-content">
           <h3>DoN</h3>
           <p>
-            O projeto visa facilitar a relação Don Don Don Don Don Don Don Don
-            Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don
-            Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don Don
-            Don Don Don Don Don Don Don Don Don Don Don Don Don Don.
+            O DoN é um sistema web na área de nutrição e desenvolvido no ano de 2020. As principais funcionalidades 
+            do sistema são o cadastro e acompanhamento clínico dos pacientes.
           </p>
         </div>
       </div>

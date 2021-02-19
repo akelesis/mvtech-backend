@@ -74,6 +74,17 @@ export default {
   border-color: transparent transparent #27507d transparent;
 }
 
+.desktop-link { 
+  display: flex;
+  font-size: 35px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.desktop-link:hover {
+  border-bottom: 3px solid #fff;
+}
+
 .fixed {
   position: fixed;
   max-width: 100vw;
@@ -127,7 +138,7 @@ export default {
 }
 
 nav {
-  height: 62px;
+  height: 90px;
   position: relative;
   display: flex;
   flex-direction: row;

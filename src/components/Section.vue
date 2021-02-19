@@ -49,6 +49,10 @@ section {
   height: 120px;
 }
 
+.tecnologies-icons div img:hover {
+
+}
+
 .about-icon {
   max-width: 580px;
   width: 100%;
@@ -147,6 +151,10 @@ section {
 .services-grid img.selected {
   filter: brightness(0) invert(1);
   background: rgba(0, 0, 0, 0);
+}
+
+#tecnologies img:hover{
+  
 }
 
 .portfolio-container {
