@@ -125,31 +125,51 @@
       <h2>Tecnologias que utilizamos</h2>
       <div class="tecnologies-icons">
         <div>
-          <img src="../assets/icons/html.svg" alt="html_icon" />
+          <img
+            src="../assets/icons/html.svg"
+            alt="html_icon"
+            class="html_icon"
+          />
           <h2>HTML</h2>
         </div>
         <div>
-          <img src="../assets/icons/css.svg" alt="css_icon" />
+          <img src="../assets/icons/css.svg" alt="css_icon" class="css_icon" />
           <h2>CSS</h2>
         </div>
         <div>
-          <img src="../assets/icons/javascript.svg" alt="javascript_icon" />
+          <img
+            src="../assets/icons/javascript.svg"
+            alt="javascript_icon"
+            class="javascript_icon"
+          />
           <h2>JAVASCRIPT</h2>
         </div>
         <div>
-          <img src="../assets/icons/react.svg" alt="react_icon" />
+          <img
+            src="../assets/icons/react.svg"
+            alt="react_icon"
+            class="react_icon"
+          />
           <h2>REACT</h2>
         </div>
         <div>
-          <img src="../assets/icons/vue.svg" alt="vue_icon" />
+          <img src="../assets/icons/vue.svg" alt="vue_icon" class="vue_icon" />
           <h2>VUE</h2>
         </div>
         <div>
-          <img src="../assets/icons/node.svg" alt="node_icon" />
+          <img
+            src="../assets/icons/node.svg"
+            alt="node_icon"
+            class="node_icon"
+          />
           <h2>NODE</h2>
         </div>
         <div>
-          <img src="../assets/icons/figma.svg" alt="figma_icon" />
+          <img
+            src="../assets/icons/figma.svg"
+            alt="figma_icon"
+            class="figma_icon"
+          />
           <h2>FIGMA</h2>
         </div>
       </div>
@@ -305,5 +325,40 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.html_icon:hover {
+  filter: brightness(0.5) sepia(1) saturate(100) opacity(0.8)
+    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.css_icon:hover {
+  filter: invert(0.25) sepia(100%) brightness(100%) saturate(70)
+    hue-rotate(180deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.javascript_icon:hover {
+  filter: invert(0.35) sepia(100%) brightness(100%) saturate(2.5)
+    hue-rotate(360deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.react_icon:hover {
+  filter: invert(0.25) sepia(100%) brightness(100%) saturate(50)
+    hue-rotate(180deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.vue_icon:hover {
+  filter: invert(0.25) sepia(100%) brightness(70%) saturate(3) hue-rotate(90deg)
+    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.node_icon:hover {
+  filter: invert(0.25) sepia(100%) brightness(100%) saturate(50)
+    hue-rotate(90deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.figma_icon:hover {
+  filter: invert(0.25) sepia(100%) brightness(100%) saturate(5)
+    hue-rotate(270deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
 }
 </style>
