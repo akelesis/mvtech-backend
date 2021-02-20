@@ -209,10 +209,17 @@
     <Section id="budget">
       <h2>Solicite um orçamento</h2>
       <div class="budget-container">
-        <img
+        <div>
+          <lottie-animation
+            path="./budget.json"
+            :autoPlay="true"
+            alt="Two people playing with a giant coin"
+          />
+        </div>
+        <!-- <img
           src="../assets/images/budget.gif"
           alt="Two people playing with a giant coin"
-        />
+        /> -->
         <form @submit.prevent="handleFormSubmit()">
           <span
             >Deixe aqui o seu contato e algumas informações básicas sobre a
@@ -238,6 +245,7 @@
 <script>
 import Section from "../components/Section";
 import { emailUrl } from "../config";
+import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 
 export default {
   name: "Content",
@@ -255,6 +263,7 @@ export default {
   },
   components: {
     Section,
+    LottieAnimation,
   },
   props: {
     color: {

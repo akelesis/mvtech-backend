@@ -63,7 +63,7 @@ section {
 }
 
 .about-icon {
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -279,8 +279,8 @@ section {
   margin-top: 15px;
 }
 
-.budget-container img {
-  max-width: 500px;
+.budget-container div {
+  max-width: 600px;
   width: 100%;
   height: min-content;
 }
