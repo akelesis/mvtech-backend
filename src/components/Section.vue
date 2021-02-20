@@ -31,9 +31,13 @@ section {
   padding: 30px;
 }
 
+#tecnologies > h2 {
+  font-size: 40px;
+}
+
 .tecnologies-icons {
-  width: 85vw;
-  height: 170px;
+  width: 90vw;
+  height: 180px;
 
   display: flex;
   justify-content: space-around;
@@ -43,18 +47,23 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .tecnologies-icons div img {
-  height: 120px;
+  height: 130px;
+  width: 130px;
+
+  transition: width .5s, heigth .5s;
 }
 
 .tecnologies-icons div img:hover {
-
+  width: 180px;
+  height: 180px;
 }
 
 .about-icon {
-  max-width: 400px; /* 580px */
+  max-width: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -81,7 +90,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* space-evenly */
+  justify-content: space-around;
   align-items: stretch;
 }
 
@@ -144,17 +153,34 @@ section {
   transition: opacity 0.2s;
 }
 
-.services-grid img:hover {
+.services-grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  width: 180px;
+  background: #273242;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 130px;
+
+  transition: opacity 0.2s;
+}
+
+.services-grid div:hover {
   opacity: 0.8;
 }
 
-.services-grid img.selected {
-  filter: brightness(0) invert(1);
-  background: rgba(0, 0, 0, 0);
+.services-grid div .service-icon path {
+  fill: #6FB6CC;
 }
 
-#tecnologies img:hover{
-  
+.services-grid div.selected {
+  background: #6FB6CC;
+}
+.services-grid div.selected .service-icon path {
+  fill: white;
 }
 
 .portfolio-container {
@@ -249,6 +275,8 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: stretch;
+
+  margin-top: 15px;
 }
 
 .budget-container img {
@@ -365,9 +393,11 @@ section {
     padding: 20px 0 20px 0;
   }
 
-  .services-grid img {
+  .services-grid div {
     width: 20vw;
     height: 20vw;
+
+    font-size: 80px;
   }
 
   .tecnologies-icons {

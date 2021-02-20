@@ -33,7 +33,7 @@
       <h2>Serviços</h2>
       <div class="services-container">
         <div class="services-content">
-          <h3 v-if="selectedService === 1">Planeta Terra</h3>
+          <h3 v-if="selectedService === 1">Websites</h3>
           <p v-if="selectedService === 1">
             PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
@@ -44,7 +44,7 @@
             ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
             dictum dui. Ut facilisis sed velit sit amet tempus.
           </p>
-          <h3 v-if="selectedService === 2">Computador Xou</h3>
+          <h3 v-if="selectedService === 2">Aplicações Desktop</h3>
           <p v-if="selectedService === 2">
             PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
@@ -66,7 +66,7 @@
             ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
             dictum dui. Ut facilisis sed velit sit amet tempus.
           </p>
-          <h3 v-if="selectedService === 4">Armazenamento xou</h3>
+          <h3 v-if="selectedService === 4">Business Intelligence</h3>
           <p v-if="selectedService === 4">
             PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
@@ -77,7 +77,7 @@
             ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
             dictum dui. Ut facilisis sed velit sit amet tempus.
           </p>
-          <h3 v-if="selectedService === 5">Engenheiros Mecânicos Fora Daqui</h3>
+          <h3 v-if="selectedService === 5">Manutenção</h3>
           <p v-if="selectedService === 5">
             PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
@@ -88,7 +88,7 @@
             ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
             dictum dui. Ut facilisis sed velit sit amet tempus.
           </p>
-          <h3 v-if="selectedService === 6">Paint melhor que Photoshop</h3>
+          <h3 v-if="selectedService === 6">Desenvolvimento de Layouts</h3>
           <p v-if="selectedService === 6">
             PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
@@ -101,42 +101,24 @@
           </p>
         </div>
         <div class="services-grid">
-          <img
-            @click="handleService(1)"
-            src="../assets/icons/world.svg"
-            alt="Globe Icon"
-            :class="selectedService === 1 ? 'selected' : ''"
-          />
-          <img
-            @click="handleService(2)"
-            src="../assets/icons/laptop.svg"
-            alt="Laptop Icon"
-            :class="selectedService === 2 ? 'selected' : ''"
-          />
-          <img
-            @click="handleService(3)"
-            src="../assets/icons/tablet.svg"
-            alt="Tablet Icon"
-            :class="selectedService === 3 ? 'selected' : ''"
-          />
-          <img
-            @click="handleService(4)"
-            src="../assets/icons/storage.svg"
-            alt="Storage Icon"
-            :class="selectedService === 4 ? 'selected' : ''"
-          />
-          <img
-            @click="handleService(5)"
-            src="../assets/icons/cogs.svg"
-            alt="Gears Icon"
-            :class="selectedService === 5 ? 'selected' : ''"
-          />
-          <img
-            @click="handleService(6)"
-            src="../assets/icons/paint.svg"
-            alt="Paint Icon"
-            :class="selectedService === 6 ? 'selected' : ''"
-          />
+          <div @click="handleService(1)" :class="selectedService === 1 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="globe" />
+          </div>
+          <div @click="handleService(2)" :class="selectedService === 2 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="laptop" />
+          </div>
+          <div @click="handleService(3)" :class="selectedService === 3 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="tablet-alt" />
+          </div>
+          <div @click="handleService(4)" :class="selectedService === 4 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="server" />
+          </div>
+          <div @click="handleService(5)" :class="selectedService === 5 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="cogs" />
+          </div>
+          <div @click="handleService(6)" :class="selectedService === 6 ? 'selected' : ''">
+            <font-awesome-icon class="service-icon" icon="palette" />
+          </div>
         </div>
       </div>
     </Section>

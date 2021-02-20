@@ -176,6 +176,12 @@ button:hover {
   opacity: 0.8;
 }
 
+@media (max-width: 1150px) {
+  .desktop-link { 
+    font-size: 26px;
+  }
+}
+
 @media (max-width: 860px) {
   button {
     display: flex;
