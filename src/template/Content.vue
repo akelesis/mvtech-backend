@@ -35,88 +35,87 @@
         <div class="services-content">
           <h3 v-if="selectedService === 1">Websites</h3>
           <p v-if="selectedService === 1">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            Quer apresentar o seu produto ou serviço? Deseja ter uma aplicação
+            que ficará disponível para todo e qualquer aparelho com acesso a
+            internet? Eis a sua necessidade, um website. À partir dele, criamos
+            um ambiente onde computadores, smartphones, video games, e qualquer
+            outro dispositivo conectado à rede possa encontrar você.
           </p>
           <h3 v-if="selectedService === 2">Aplicações Desktop</h3>
           <p v-if="selectedService === 2">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            A melhor solução para quem precisa de um melhor desempenho em
+            relação aos websites, e não se importa em abrir mão da
+            disponibilidade que os navegadores trazem. Aplicações Desktop
+            trazem, além disso, um acesso facilitado à funcionalidades mais
+            específicas do computador, como câmera, microfones, etc.
           </p>
           <h3 v-if="selectedService === 3">PWA</h3>
           <p v-if="selectedService === 3">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            Não sabe se precisa de um website ou um aplicativo mobile? Que tal
+            um meio termo? PWAs compõem a mais nova solução envolvendo a criação
+            de aplicativos, porque funcionam como um híbrido entre websites
+            normais e os aplicativos de celular. Construindo um PWA, você terá o
+            comportamento e as principais vantagens de um aplicativo mobile, mas
+            com a mesma disponibilidade de um website.
           </p>
           <h3 v-if="selectedService === 4">Business Intelligence</h3>
           <p v-if="selectedService === 4">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            Se for de sua vontade construir um negócio com vantagens
+            competitivas no mercado e estabilidade a longo prazo, Business
+            Intelligence se faz essencial. Desenvolvemos ferramentas que irão
+            auxiliar no recolhimento e na gestão de todo e qualquer dado que
+            possa vir a ser importante para ter um maior controle dos setores de
+            sua empresa.
           </p>
           <h3 v-if="selectedService === 5">Manutenção</h3>
           <p v-if="selectedService === 5">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            Se tem um projeto que foi criado há um tempo, e ele começou a
+            apresentar problemas ou mesmo ficou muito datado, não
+            necessariamente ele precisa ser descartado.
           </p>
           <h3 v-if="selectedService === 6">Desenvolvimento de Layouts</h3>
           <p v-if="selectedService === 6">
-            PWA é uma tecnologia Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Mauris eget felis eget lacus volutpat malesuada
-            eget nec dolor. Fusce condimentum libero a dui commodo pellentesque.
-            Aliquam tempor tortor nibh, nec finibus erat faucibus nec. Nullam
-            congue non nulla rhoncus feugiat. Ut sed lectus felis. Morbi luctus
-            sapien risus, sed rhoncus purus imperdiet non. Nunc accumsan, nulla
-            ac blandit dignissim, erat nisl rutrum metus, at cursus libero justo
-            dictum dui. Ut facilisis sed velit sit amet tempus.
+            Caso tenha uma ideia e sinta que se faz necessário um protótipo da
+            mesma, sua ideia pode vir à vida partindo de um layout não
+            funcional. É o meio mais simples e rápido de se obter algo
+            apresentável para terceiros.
           </p>
         </div>
         <div class="services-grid">
-          <div @click="handleService(1)" :class="selectedService === 1 ? 'selected' : ''">
+          <div
+            @click="handleService(1)"
+            :class="selectedService === 1 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="globe" />
           </div>
-          <div @click="handleService(2)" :class="selectedService === 2 ? 'selected' : ''">
+          <div
+            @click="handleService(2)"
+            :class="selectedService === 2 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="laptop" />
           </div>
-          <div @click="handleService(3)" :class="selectedService === 3 ? 'selected' : ''">
+          <div
+            @click="handleService(3)"
+            :class="selectedService === 3 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="tablet-alt" />
           </div>
-          <div @click="handleService(4)" :class="selectedService === 4 ? 'selected' : ''">
+          <div
+            @click="handleService(4)"
+            :class="selectedService === 4 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="server" />
           </div>
-          <div @click="handleService(5)" :class="selectedService === 5 ? 'selected' : ''">
+          <div
+            @click="handleService(5)"
+            :class="selectedService === 5 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="cogs" />
           </div>
-          <div @click="handleService(6)" :class="selectedService === 6 ? 'selected' : ''">
+          <div
+            @click="handleService(6)"
+            :class="selectedService === 6 ? 'selected' : ''"
+          >
             <font-awesome-icon class="service-icon" icon="palette" />
           </div>
         </div>
@@ -182,26 +181,26 @@
         <div v-if="selectedPortfolio === 1" class="portfolio-content">
           <h3>CONSULBA</h3>
           <p>
-            O projeto visa facilitar a relação consulba consulba consulba
-            consulba consulba consulba consulba consulba consulba consulba
-            consulba consulba consulba consulba consulba consulba consulba
-            consulba consulba consulba.
+            Sistema web de consultas online, que visa ajudar na demanda da
+            COVID-19
           </p>
         </div>
         <div v-if="selectedPortfolio === 2" class="portfolio-content">
           <h3>CONEXTUDE</h3>
           <p>
-            O projeto visa facilitar a relação conextude conextude conextude
-            conextude conextude conextude conextude conextude conextude
-            conextude conextude conextude conextude conextude conextude
-            conextude conextude conextude conextude.
+            O projeto visa facilitar a relação entre escolas e seus alunos,
+            criando um ambiente na web onde o colégio pode ter controle de suas
+            informações, professores podem mandar recados, exercícios e
+            materiais de apoio, e alunos podem ter um melhor controle de como
+            vão os seus estudos.
           </p>
         </div>
         <div v-if="selectedPortfolio === 3" class="portfolio-content">
           <h3>DoN</h3>
           <p>
-            O DoN é um sistema web na área de nutrição e desenvolvido no ano de 2020. As principais funcionalidades 
-            do sistema são o cadastro e acompanhamento clínico dos pacientes.
+            O DoN é um sistema web na área de nutrição e desenvolvido no ano de
+            2020. As principais funcionalidades do sistema são o cadastro e
+            acompanhamento clínico dos pacientes.
           </p>
         </div>
       </div>
