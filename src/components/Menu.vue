@@ -90,6 +90,7 @@ export default {
   max-width: 100vw;
   top: 0;
 
+  box-shadow: 0 8px 6px -6px black;
   z-index: 5;
 }
 
