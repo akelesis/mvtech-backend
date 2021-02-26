@@ -9,10 +9,6 @@
           alt="Two people playing with a giant coin"
         />
       </div>
-      <!-- <img
-          src="../assets/images/budget.gif"
-          alt="Two people playing with a giant coin"
-        /> -->
       <form @submit.prevent="handleFormSubmit()">
         <span
           >Deixe aqui o seu contato e algumas informações básicas sobre a ideia
