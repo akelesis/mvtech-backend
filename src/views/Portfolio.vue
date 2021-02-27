@@ -6,18 +6,21 @@
         <button
           @click="handlePortfolio(1)"
           :class="selectedPortfolio === 1 ? 'selected-button' : ''"
+          id="consulba-button"
         >
           CONSULBA
         </button>
         <button
           @click="handlePortfolio(2)"
           :class="selectedPortfolio === 2 ? 'selected-button' : ''"
+          id="conextude-button"
         >
           CONEXTUDE
         </button>
         <button
           @click="handlePortfolio(3)"
           :class="selectedPortfolio === 3 ? 'selected-button' : ''"
+          id="don-button"
         >
           DoN
         </button>

@@ -31,7 +31,7 @@
       v-bind:style="isMobileNavActivated ? 'left: 70vw;' : 'left: -110vw;'"
       @click="handleMobileNav()"
     ></div>
-    <button @click="handleMobileNav()">
+    <button @click="handleMobileNav()" class="mobile-nav-btn">
       <font-awesome-icon icon="bars" id="bars-icon" />
     </button>
   </nav>

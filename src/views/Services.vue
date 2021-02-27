@@ -54,36 +54,42 @@
         <div
           @click="handleService(1)"
           :class="selectedService === 1 ? 'selected' : ''"
+          id="globe-button"
         >
           <i class="fas fa-globe service-icon"></i>
         </div>
         <div
           @click="handleService(2)"
           :class="selectedService === 2 ? 'selected' : ''"
+          id="laptop-button"
         >
           <i class="fas fa-laptop service-icon"></i>
         </div>
         <div
           @click="handleService(3)"
           :class="selectedService === 3 ? 'selected' : ''"
+          id="tablet-button"
         >
           <i class="fas fa-tablet-alt service-icon"></i>
         </div>
         <div
           @click="handleService(4)"
           :class="selectedService === 4 ? 'selected' : ''"
+          id="server-button"
         >
           <i class="fas fa-server service-icon"></i>
         </div>
         <div
           @click="handleService(5)"
           :class="selectedService === 5 ? 'selected' : ''"
+          id="cogs-button"
         >
           <i class="fas fa-cogs service-icon"></i>
         </div>
         <div
           @click="handleService(6)"
           :class="selectedService === 6 ? 'selected' : ''"
+          id="palette-button"
         >
           <i class="fas fa-palette service-icon"></i>
         </div>

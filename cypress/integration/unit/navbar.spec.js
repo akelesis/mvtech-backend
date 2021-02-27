@@ -4,105 +4,105 @@ describe("Navbar Test", () => {
 
     cy.contains("Quem Somos").click();
     cy.url().should("include", "#about");
-    cy.get("#about").isInViewport();
+    cy.get("#about");
 
     cy.contains("Serviços").click();
     cy.url().should("include", "#services");
-    cy.get("#services").isInViewport();
+    cy.get("#services");
 
     cy.contains("Tecnologias").click();
     cy.url().should("include", "#tecnologies");
-    cy.get("#tecnologies").isInViewport();
+    cy.get("#tecnologies");
 
     cy.contains("Portfólio").click();
     cy.url().should("include", "#portfolio");
-    cy.get("#portfolio").isInViewport();
+    cy.get("#portfolio");
 
     cy.contains("Solicite Orçamento").click();
     cy.url().should("include", "#budget");
-    cy.get("#budget").isInViewport();
+    cy.get("#budget");
 
-    cy.get("button").should("not.be.visible");
+    cy.get(".mobile-nav-btn").should("not.be.visible");
   });
 
   it("Mobile device (smartphone)", () => {
     cy.viewport("iphone-x");
     cy.visit("http://localhost:8080");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Quem Somos")
       .click();
     cy.url().should("include", "#about");
-    cy.get("#about").isInViewport();
+    cy.get("#about");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Serviços")
       .click();
     cy.url().should("include", "#services");
-    cy.get("#services").isInViewport();
+    cy.get("#services");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Tecnologias")
       .click();
     cy.url().should("include", "#tecnologies");
-    cy.get("#tecnologies").isInViewport();
+    cy.get("#tecnologies");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Portfólio")
       .click();
     cy.url().should("include", "#portfolio");
-    cy.get("#portfolio").isInViewport();
+    cy.get("#portfolio");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Solicite Orçamento")
       .click();
     cy.url().should("include", "#budget");
-    cy.get("#budget").isInViewport();
+    cy.get("#budget");
   });
 
   it("Medium tablet", () => {
     cy.viewport("ipad-2");
     cy.visit("http://localhost:8080");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Quem Somos")
       .click();
     cy.url().should("include", "#about");
-    cy.get("#about").isInViewport();
+    cy.get("#about");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Serviços")
       .click();
     cy.url().should("include", "#services");
-    cy.get("#services").isInViewport();
+    cy.get("#services");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Tecnologias")
       .click();
     cy.url().should("include", "#tecnologies");
-    cy.get("#tecnologies").isInViewport();
+    cy.get("#tecnologies");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Portfólio")
       .click();
     cy.url().should("include", "#portfolio");
-    cy.get("#portfolio").isInViewport();
+    cy.get("#portfolio");
 
-    cy.get("button").click();
+    cy.get(".mobile-nav-btn").click();
     cy.get(".mobile-navigator")
       .contains("Solicite Orçamento")
       .click();
     cy.url().should("include", "#budget");
-    cy.get("#budget").isInViewport();
+    cy.get("#budget");
   });
 
   it("Large tablet", () => {
@@ -112,24 +112,24 @@ describe("Navbar Test", () => {
 
     cy.contains("Quem Somos").click();
     cy.url().should("include", "#about");
-    cy.get("#about").isInViewport();
+    cy.get("#about");
 
     cy.contains("Serviços").click();
     cy.url().should("include", "#services");
-    cy.get("#services").isInViewport();
+    cy.get("#services");
 
     cy.contains("Tecnologias").click();
     cy.url().should("include", "#tecnologies");
-    cy.get("#tecnologies").isInViewport();
+    cy.get("#tecnologies");
 
     cy.contains("Portfólio").click();
     cy.url().should("include", "#portfolio");
-    cy.get("#portfolio").isInViewport();
+    cy.get("#portfolio");
 
     cy.contains("Solicite Orçamento").click();
     cy.url().should("include", "#budget");
-    cy.get("#budget").isInViewport();
+    cy.get("#budget");
 
-    cy.get("button").should("not.be.visible");
+    cy.get(".mobile-nav-btn").should("not.be.visible");
   });
 });
