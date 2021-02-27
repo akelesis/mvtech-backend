@@ -55,37 +55,37 @@
           @click="handleService(1)"
           :class="selectedService === 1 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="globe" />
+          <i class="fas fa-globe service-icon"></i>
         </div>
         <div
           @click="handleService(2)"
           :class="selectedService === 2 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="laptop" />
+          <i class="fas fa-laptop service-icon"></i>
         </div>
         <div
           @click="handleService(3)"
           :class="selectedService === 3 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="tablet-alt" />
+          <i class="fas fa-tablet-alt service-icon"></i>
         </div>
         <div
           @click="handleService(4)"
           :class="selectedService === 4 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="server" />
+          <i class="fas fa-server service-icon"></i>
         </div>
         <div
           @click="handleService(5)"
           :class="selectedService === 5 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="cogs" />
+          <i class="fas fa-cogs service-icon"></i>
         </div>
         <div
           @click="handleService(6)"
           :class="selectedService === 6 ? 'selected' : ''"
         >
-          <font-awesome-icon class="service-icon" icon="palette" />
+          <i class="fas fa-palette service-icon"></i>
         </div>
       </div>
     </div>
@@ -145,7 +145,7 @@ export default {
   gap: 30px;
 }
 
-.services-grid img {
+/* .services-grid img {
   height: 150px;
   width: 150px;
   background: #273242;
@@ -153,7 +153,7 @@ export default {
   padding: 10px;
 
   transition: opacity 0.2s;
-}
+} */
 
 .services-grid div {
   display: flex;
@@ -173,17 +173,17 @@ export default {
 .services-grid div:hover {
   opacity: 0.8;
 }
-
-.services-grid div .service-icon path {
-  fill: #6FB6CC;
-}
-
 .services-grid div.selected {
   background: #6FB6CC;
 }
-.services-grid div.selected .service-icon path {
-  fill: white;
+
+.service-icon {
+  color: #6FB6CC;
 }
+.services-grid div.selected .service-icon {
+  color: white;
+}
+
 
 @media (min-width: 1110px) {
   .services-content {

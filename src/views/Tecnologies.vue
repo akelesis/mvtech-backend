@@ -3,43 +3,31 @@
     <h2>Tecnologias que utilizamos</h2>
     <div class="tecnologies-icons">
       <div>
-        <img src="../assets/icons/html.svg" alt="html_icon" class="html_icon" />
+        <i id="html-icon" class="fab fa-html5 grow-on-hover"></i>
         <h2>HTML</h2>
       </div>
       <div>
-        <img src="../assets/icons/css.svg" alt="css_icon" class="css_icon" />
+        <i id="css-icon" class="fab fa-css3-alt grow-on-hover"></i>
         <h2>CSS</h2>
       </div>
       <div>
-        <img
-          src="../assets/icons/javascript.svg"
-          alt="javascript_icon"
-          class="javascript_icon"
-        />
+        <i id="javascript-icon" class="fab fa-js grow-on-hover"></i>
         <h2>JAVASCRIPT</h2>
       </div>
       <div>
-        <img
-          src="../assets/icons/react.svg"
-          alt="react_icon"
-          class="react_icon"
-        />
+        <i id="react-icon" class="fab fa-react grow-on-hover"></i>
         <h2>REACT</h2>
       </div>
       <div>
-        <img src="../assets/icons/vue.svg" alt="vue_icon" class="vue_icon" />
+        <i id="vue-icon" class="fab fa-vuejs grow-on-hover"></i>
         <h2>VUE</h2>
       </div>
       <div>
-        <img src="../assets/icons/node.svg" alt="node_icon" class="node_icon" />
+        <i id="node-icon" class="fab fa-node-js grow-on-hover"></i>
         <h2>NODE</h2>
       </div>
       <div>
-        <img
-          src="../assets/icons/figma.svg"
-          alt="figma_icon"
-          class="figma_icon"
-        />
+        <i id="figma-icon" class="fab fa-figma grow-on-hover"></i>
         <h2>FIGMA</h2>
       </div>
     </div>
@@ -88,51 +76,70 @@ export default {
   align-items: center;
 }
 
-.tecnologies-icons div img {
-  height: 130px;
-  width: 130px;
-
-  transition: width .5s, heigth .5s;
+.grow-on-hover {
+  font-size: 150px;
+  transition: font-size .5s;
 }
 
-.tecnologies-icons div img:hover {
-  width: 180px;
-  height: 180px;
+.grow-on-hover:hover {
+  font-size: 200px;
 }
 
-.html_icon:hover {
-  filter: brightness(0.5) sepia(1) saturate(100) opacity(0.8)
-    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
-}
+#html-icon:hover {
+  color: orangered;
 
-.css_icon:hover {
-  filter: invert(0.25) sepia(100%) brightness(100%) saturate(70)
-    hue-rotate(180deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
-}
+  /* background: white;
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px; */
 
-.javascript_icon:hover {
-  filter: invert(0.35) sepia(100%) brightness(100%) saturate(2.5)
-    hue-rotate(360deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  /* background: rgb(255,255,255); */
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(121,172,220,1) 100%); */
+  /* filter: drop-shadow(0 0 0.75rem #fff); */
 }
+#css-icon:hover {
+  color: dodgerblue;
 
-.react_icon:hover {
-  filter: invert(0.25) sepia(100%) brightness(100%) saturate(50)
-    hue-rotate(180deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  /* background: white;
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px; */
 }
+#javascript-icon:hover {
+  color: yellow;
 
-.vue_icon:hover {
-  filter: invert(0.25) sepia(100%) brightness(70%) saturate(3) hue-rotate(90deg)
-    drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  /* background: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 0px; */
 }
+#react-icon:hover {
+  color: cornflowerblue;
 
-.node_icon:hover {
-  filter: invert(0.25) sepia(100%) brightness(100%) saturate(50)
-    hue-rotate(90deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  /* background: white;
+  border-radius: 25px;
+  padding: 8px 10px; */
 }
+#vue-icon:hover {
+  color: mediumseagreen;
 
-.figma_icon:hover {
-  filter: invert(0.25) sepia(100%) brightness(100%) saturate(5)
-    hue-rotate(270deg) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  /* background: white;
+  border-radius: 25px;
+  padding: 5px 15px; */
+}
+#node-icon:hover {
+  color: green;
+
+  /* background: white;
+  border-radius: 25px;
+  padding: 10px 15px; */
+}
+#figma-icon:hover {
+  color: blueviolet;
+
+  /* background: white;
+  border-radius: 25px;
+  padding: 15px 25px; */
 }
 
 @media (max-width: 1110px) {
@@ -162,7 +169,7 @@ export default {
     padding: 20px 0 20px 0;
   }
 
-  .tecnologies-icons img {
+  .tecnologies-icons i {
     margin-bottom: 10px;
   }
 
