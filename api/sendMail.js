@@ -14,14 +14,14 @@ module.exports = app => {
 
     const mailOptions = (req, res)=>{ 
         const dados = req.body;
-        const email = {
-            from: "",
+        const emailData = {
+            from: "Contato do Site",
             to: email,
             subject: "Formulario MVTech",
             text: "Nome: "+ dados.name +"\nEmail: " + dados.email + "\nTelefone: " + dados.phone + "\nMensagem: " + dados.message
         }
 
-        transporter.sendMail(email, (err, info) => { 
+        transporter.sendMail(emailData, (err, info) => { 
             if (err) {
                 return res.status(500).send(err);
             }
