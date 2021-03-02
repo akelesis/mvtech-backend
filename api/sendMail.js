@@ -13,6 +13,7 @@ module.exports = app => {
     })
 
     const mailOptions = (req, res)=>{ 
+        console.log(req.body)
         const dados = req.body;
         const emailData = {
             from: "Contato do Site",
