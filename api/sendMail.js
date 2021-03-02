@@ -1,11 +1,14 @@
 const nodemailer = require("nodemailer") 
+require("dotenv").config()
+const email = process.env.email;
+const password = process.env.password;
 
 module.exports = app => {
     const transporter = nodemailer.createTransport({ 
         service: "Gmail", 
         auth: {
-            user: "",
-            pass: ""
+            user: email,
+            pass: password
         }
     })
 
@@ -13,7 +16,7 @@ module.exports = app => {
         const dados = req.body;
         const email = {
             from: "",
-            to: "",
+            to: email,
             subject: "Formulario MVTech",
             text: "Nome: "+ dados.name +"\nEmail: " + dados.email + "\nTelefone: " + dados.phone + "\nMensagem: " + dados.message
         }
