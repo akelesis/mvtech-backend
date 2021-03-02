@@ -35,19 +35,18 @@
       <div v-if="selectedPortfolio === 2" class="portfolio-content">
         <h3>CONEXTUDE</h3>
         <p>
-          O projeto visa facilitar a relação entre escolas e seus alunos,
-          criando um ambiente na web onde o colégio pode ter controle de suas
-          informações, professores podem mandar recados, exercícios e materiais
-          de apoio, e alunos podem ter um melhor controle de como vão os seus
-          estudos.
+          O Conextude é uma plataforma online para escolas que visa uma melhor
+          experiência para o estudante, professores e coordenação, criando um ambiente 
+          virtual amigável e promovendo uma extensão do conhecimento para além das paredes da 
+          instituição de ensino.
         </p>
       </div>
       <div v-if="selectedPortfolio === 3" class="portfolio-content">
         <h3>DoN</h3>
         <p>
-          O DoN é um sistema web na área de nutrição e desenvolvido no ano de
-          2020. As principais funcionalidades do sistema são o cadastro e
-          acompanhamento clínico dos pacientes.
+          O DoN (Data on Nutrition) é um sistema web para clínicas de nutrição que auxilia no 
+          acompanhamento nutricional de pacientes, o sistema conta com auto avaliação dos pacientes, 
+          recursos para revisão de auto-avaliação pelo médico nutricionista e dashboard de resultados.
         </p>
       </div>
     </div>
@@ -160,6 +159,7 @@ export default {
   text-align: justify;
   animation-name: portfolio;
   animation-duration: 0.5s;
+  font-size: 25px;
 }
 
 @media (min-width: 1110px) {

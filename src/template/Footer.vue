@@ -6,16 +6,13 @@
         <button @click="handleRedirect(1)" class="contato-button">
           <img id="insta-icon" src="../assets/icons/instagram.svg" alt="insta_icon" />
         </button>
-        <button @click="show = !show" class="contato-button">
+        <button @click="handleRedirect(2)" class="contato-button">
           <img id="whats-icon" src="../assets/icons/whatsapp.svg" alt="whats_icon" />
         </button>
-        <button @click="handleRedirect(2)" class="contato-button">
+        <button @click="handleRedirect(3)" class="contato-button">
           <img id="face-icon" src="../assets/icons/facebook.svg" alt="face_icon" />
         </button>
       </div>
-      <transition name="fade">
-        <span v-if="show">Contato: (XX) XXXXX-XXXX</span>
-      </transition>
     </div>
     <div class="copyright">
       <span>Todos os direitos reservados © 2021</span>
@@ -44,6 +41,10 @@ export default {
           return;
         
         case 2:
+          window.open('https://api.whatsapp.com/send?phone=5573991371695&text=Gostaria%20de%20falar%20sobre%20desenvolvimento%20de%20sistema!')
+          return;
+
+        case 3:
           window.open("https://www.facebook.com/mvtechsolutions");
           return;
       }

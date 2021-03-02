@@ -142,6 +142,7 @@ export default {
 
 .services-content p {
   text-align: justify;
+  font-size: 25px;
 }
 
 .services-grid {

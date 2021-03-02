@@ -103,7 +103,7 @@ export default {
 }
 
 .budget-container form span {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 30px;
 }
 

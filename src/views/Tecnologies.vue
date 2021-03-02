@@ -114,7 +114,7 @@ export default {
   margin: 0px; */
 }
 #react-icon:hover {
-  color: cornflowerblue;
+  color: rgb(54, 86, 144);
 
   /* background: white;
   border-radius: 25px;

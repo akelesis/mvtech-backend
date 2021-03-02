@@ -87,7 +87,7 @@ export default {
 }
 
 .about-content p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
   margin-bottom: 30px;
 }
